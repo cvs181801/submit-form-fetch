@@ -38,7 +38,7 @@ async function submitPost(e) {
     const options = {
         method: 'POST',
         body: JSON.stringify({input_firstName: firstName, //I need to understand this JSON.stringify structure and when it's needed
-                              input_lastName: lastName, 
+                              input_lastName: lastName, //this is the async/await data syntax for POST method
                               input_email: email}),
         headers: new Headers({
             "Content-Type": "application/json"
